@@ -19,6 +19,9 @@ public class Card {
     @Column
     private String imageUrl;
 
+    @Column
+    private Integer value;
+
     public Card() {
     }
 
@@ -26,6 +29,7 @@ public class Card {
         this.type = type;
         this.color = color;
         this.imageUrl = imageUrl;
+        this.value = value;
     }
 
     //region Getters and Setters
@@ -60,6 +64,14 @@ public class Card {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
     }
 
     //endregion
