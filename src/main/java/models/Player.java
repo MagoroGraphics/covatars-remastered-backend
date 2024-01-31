@@ -19,16 +19,20 @@ public class Player {
     private Integer score;
 
 @Column
-    private ArrayList<Card> cards;
+    private ArrayList<Card> cardsInHand;
+
+@Column
+    private ArrayList<Card> cardsOnBoard;
 
 public Player(){
 
 }
 
-    public Player(String name, Integer score, ArrayList<Card> cards) {
+    public Player(String name, Integer score, ArrayList<Card> cardsInHand, ArrayList<Card>  cardsOnBoard) {
         this.name = name;
         this.score = score;
-        this.cards = cards;
+        this.cardsInHand = cardsInHand;
+        this.cardsOnBoard = cardsOnBoard;
     }
 
     public Long getId() {
@@ -55,11 +59,19 @@ public Player(){
         this.score = score;
     }
 
-    public ArrayList<Card> getCards() {
-        return cards;
+    public ArrayList<Card> getCardsOnBoard() {
+        return cardsOnBoard;
     }
 
-    public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
+    public void setCardsOnBoard(ArrayList<Card> cardsOnBoard) {
+        this.cardsOnBoard = cardsOnBoard;
+    }
+
+    public ArrayList<Card> getCardsInHand() {
+        return cardsInHand;
+    }
+
+    public void setCardsInHand(ArrayList<Card> cardsInHand) {
+        this.cardsInHand = cardsInHand;
     }
 }
