@@ -1,4 +1,4 @@
-package models;
+package covatars.com.Covatars.models;
 
 import jakarta.persistence.*;
 
@@ -29,7 +29,6 @@ public class Card {
         this.type = type;
         this.color = color;
         this.imageUrl = imageUrl;
-        this.value = value;
     }
 
     //region Getters and Setters

@@ -1,4 +1,4 @@
-package models;
+package covatars.com.Covatars.models;
 
 import jakarta.persistence.*;
 

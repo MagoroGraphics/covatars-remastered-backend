@@ -1,9 +1,9 @@
-package controllers;
-import models.Card;
+package covatars.com.Covatars.controllers;
+import covatars.com.Covatars.models.Card;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import repositories.CardRepository;
+import covatars.com.Covatars.repositories.CardRepository;
 
 @RestController
 @RequestMapping("/cards")
