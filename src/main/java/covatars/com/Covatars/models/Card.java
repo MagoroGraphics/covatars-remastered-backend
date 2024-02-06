@@ -25,10 +25,11 @@ public class Card {
     public Card() {
     }
 
-    public Card(String type, String color, String imageUrl) {
+    public Card(String type, String color, String imageUrl, Integer value) {
         this.type = type;
         this.color = color;
         this.imageUrl = imageUrl;
+        this.value = value;
     }
 
     //region Getters and Setters
