@@ -19,3 +19,4 @@ public class CardController {
         return cardRepository.findAll();
     }
 }
+
